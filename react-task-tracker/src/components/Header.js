@@ -1,7 +1,18 @@
+import Button from './Button'
+
 const Header = (props) => {
+    const onClick = () => {
+        console.log('Click')
+    }
+
     return (
-        <header>
-            <h1>Task tracker {props.title}</h1>
+        <header className='header'>
+            <h1>Task tracker</h1>
+            <Button 
+                color='green' 
+                text='Add' 
+                onClick={onClick}
+            />
         </header>
     )
 }
