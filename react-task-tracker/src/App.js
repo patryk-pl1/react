@@ -69,6 +69,7 @@ const toggleReminder = (id) => {
       <Header 
         onAdd={() => setShowAddTask(!showAddTask)}
         showAdd={showAddTask}
+        title="Zadania"
       />
       {showAddTask && <AddTask onAdd={addTask} />}
       { tasks.length > 0 ?
